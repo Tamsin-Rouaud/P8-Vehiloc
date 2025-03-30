@@ -5,7 +5,8 @@
 {% block body %}
 
 <section id="car">
-    <a href="../../">← Retour</a>
+    {# <a href="../../">← Retour</a> #}
+    <a href="{{ path('app_home')}}">← Retour</a>
     {% if voiture is not null %}
     <h1>{{voiture.nomVoiture}}</h1>
     
