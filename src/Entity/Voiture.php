@@ -39,7 +39,7 @@ class Voiture
     private ?float $prixJournalier = null;
 
     #[Assert\NotBlank()]
-    #[Assert\Type('integer')]
+    #[Assert\Range(min:1, max:9)]
     #[ORM\Column]
     private ?int $nombrePlaces = null;
 
